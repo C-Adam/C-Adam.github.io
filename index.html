@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MonopoliHacks — Build, Ship, Win</title>
+    <meta name="description" content="A Monopoly-themed hackathon landing page for GitHub Pages." />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Optional: clean, modern type that still feels “boardgame” with the styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Decorative background layers -->
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#top">
+          <span class="brand__token" aria-hidden="true">M</span>
+          <span class="brand__text">MonopoliHacks</span>
+        </a>
+
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#tracks">Tracks</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#prizes">Prizes</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <a class="btn btn--small btn--primary" href="#register">Register</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <div class="badge">
+              <span class="badge__dot" aria-hidden="true"></span>
+              <span>48 hours • Teams of 1–4 • In-person + online</span>
+            </div>
+
+            <h1 class="hero__title">
+              Build big ideas.<br />
+              <span class="hero__accent">Own the board.</span>
+            </h1>
+
+            <p class="hero__subtitle">A Monopoly-themed hackathon where you ship fast, pitch hard, and take home prizes. Create tools that save time, money, or both — and don’t land in “technical debt jail.”</p>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#register">Get Your Ticket</a>
+              <a class="btn btn--ghost" href="#sponsor">Sponsor / Partner</a>
+            </div>
+
+            <div class="hero__stats">
+              <div class="stat">
+                <div class="stat__num">400+</div>
+                <div class="stat__label">Builders</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">30+</div>
+                <div class="stat__label">Mentors</div>
+              </div>
+              <div class="stat">
+                <div class="stat__num">$10K</div>
+                <div class="stat__label">Prizes</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__card">
+            <div class="board">
+              <div class="board__header">
+                <div class="chip chip--green">GO</div>
+                <div class="board__title">
+                  <div class="board__kicker">Hackathon Pass</div>
+                  <div class="board__name">MonopoliHacks</div>
+                </div>
+                <div class="chip chip--gold">VIP</div>
+              </div>
+
+              <div class="board__body">
+                <div class="tile tile--corner">
+                  <span class="tile__cap">FREE PARKING</span>
+                </div>
+
+                <div class="tile tile--property">
+                  <span class="stripe stripe--purple" aria-hidden="true"></span>
+                  <span class="tile__cap">DevTools Ave</span>
+                  <span class="tile__sub">Ship faster</span>
+                </div>
+
+                <div class="tile tile--chance">
+                  <span class="tile__cap">CHANCE</span>
+                  <span class="tile__sub">Random prompt</span>
+                </div>
+
+                <div class="tile tile--property">
+                  <span class="stripe stripe--blue" aria-hidden="true"></span>
+                  <span class="tile__cap">AI Blvd</span>
+                  <span class="tile__sub">Automate work</span>
+                </div>
+
+                <div class="tile tile--jail">
+                  <span class="tile__cap">TECH DEBT</span>
+                  <span class="tile__sub">Go refactor</span>
+                </div>
+              </div>
+
+              <div class="board__footer">
+                <div class="fineprint">
+                  <div class="fineprint__row"><span>Location</span><strong>Campus Hall A</strong></div>
+                  <div class="fineprint__row"><span>Date</span><strong>Apr 18–20</strong></div>
+                  <div class="fineprint__row"><span>Theme</span><strong>Time & Money</strong></div>
+                </div>
+
+                <div class="dice" aria-hidden="true">
+                  <div class="die"><span class="pip"></span><span class="pip"></span><span class="pip"></span> <span class="pip"></span><span class="pip"></span><span class="pip"></span> <span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
+                  <div class="die die--alt"><span class="pip"></span><span class="pip"></span><span class="pip"></span> <span class="pip"></span><span class="pip"></span><span class="pip"></span> <span class="pip"></span><span class="pip"></span><span class="pip"></span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero__cardGlow" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>About the event</h2>
+            <p>Think Monopoly, but for building: claim a problem, build the solution, pitch, win.</p>
+          </div>
+
+          <div class="grid3">
+            <article class="panel">
+              <h3>Own a “property”</h3>
+              <p>Pick a track, stake your claim, and build something that actually helps people.</p>
+              <div class="tagRow">
+                <span class="tag tag--purple">Problem → Product</span>
+                <span class="tag">Teams</span>
+              </div>
+            </article>
+
+            <article class="panel">
+              <h3>Draw a “chance” card</h3>
+              <p>Optional surprise prompts for bonus points: speedrun features, add a twist, or optimize.</p>
+              <div class="tagRow">
+                <span class="tag tag--gold">Bonus</span>
+                <span class="tag">Fun</span>
+              </div>
+            </article>
+
+            <article class="panel">
+              <h3>Avoid “technical debt jail”</h3>
+              <p>We score usability, polish, and real-world value — not just demos that barely run.</p>
+              <div class="tagRow">
+                <span class="tag tag--green">Quality</span>
+                <span class="tag">Impact</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRACKS -->
+      <section id="tracks" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>Tracks</h2>
+            <p>Pick a lane. Build something that saves time, saves money, or unlocks access.</p>
+          </div>
+
+          <div class="grid4">
+            <article class="track track--purple">
+              <div class="track__top">
+                <span class="track__chip">Property Set</span>
+                <h3>DevTools & Infra</h3>
+              </div>
+              <p>CI/CD helpers, debugging tools, platform utilities, developer productivity.</p>
+              <ul class="bullets">
+                <li>Observability</li>
+                <li>Automation</li>
+                <li>Cost reduction</li>
+              </ul>
+            </article>
+
+            <article class="track track--blue">
+              <div class="track__top">
+                <span class="track__chip">Property Set</span>
+                <h3>AI + Automation</h3>
+              </div>
+              <p>Assistants, copilots, workflow agents — but make it actually useful.</p>
+              <ul class="bullets">
+                <li>Time saver</li>
+                <li>Smart search</li>
+                <li>Decision support</li>
+              </ul>
+            </article>
+
+            <article class="track track--green">
+              <div class="track__top">
+                <span class="track__chip">Property Set</span>
+                <h3>Education</h3>
+              </div>
+              <p>Tools for learning, tutoring, content creation, or accessibility.</p>
+              <ul class="bullets">
+                <li>Study systems</li>
+                <li>Quizzing</li>
+                <li>Better feedback</li>
+              </ul>
+            </article>
+
+            <article class="track track--gold">
+              <div class="track__top">
+                <span class="track__chip">Property Set</span>
+                <h3>Healthcare</h3>
+              </div>
+              <p>Scheduling, compliance, patient experience, or clinician time savings.</p>
+              <ul class="bullets">
+                <li>Workflow</li>
+                <li>Access</li>
+                <li>Clarity</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SCHEDULE -->
+      <section id="schedule" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Schedule</h2>
+            <p>Simple flow. Build → mentor check-ins → demo → awards.</p>
+          </div>
+
+          <div class="timeline">
+            <div class="timeCard">
+              <div class="timeCard__cap">Day 1</div>
+              <h3>Kickoff + Team Forming</h3>
+              <p>Opening remarks, rules, track intros, and finding teammates.</p>
+              <div class="timeCard__meta"><span class="pill">6:00 PM</span><span class="pill">Check-in</span></div>
+            </div>
+
+            <div class="timeCard">
+              <div class="timeCard__cap">Day 2</div>
+              <h3>Build + Mentors</h3>
+              <p>Deep work, office hours, workshops, and optional “Chance” prompts.</p>
+              <div class="timeCard__meta"><span class="pill">All day</span><span class="pill">Workshops</span></div>
+            </div>
+
+            <div class="timeCard">
+              <div class="timeCard__cap">Day 3</div>
+              <h3>Demos + Awards</h3>
+              <p>Lightning demos, judging, closing ceremony, prizes.</p>
+              <div class="timeCard__meta"><span class="pill">2:00 PM</span><span class="pill">Finals</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRIZES -->
+      <section id="prizes" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>Prizes</h2>
+            <p>Win big. Brag bigger.</p>
+          </div>
+
+          <div class="grid3">
+            <article class="prize">
+              <div class="prize__ribbon">1st</div>
+              <h3>Grand Champion</h3>
+              <p>Top project overall + best pitch.</p>
+              <div class="prize__amount">$5,000</div>
+            </article>
+
+            <article class="prize">
+              <div class="prize__ribbon prize__ribbon--silver">2nd</div>
+              <h3>Board Boss</h3>
+              <p>Most complete product and polish.</p>
+              <div class="prize__amount">$3,000</div>
+            </article>
+
+            <article class="prize">
+              <div class="prize__ribbon prize__ribbon--bronze">3rd</div>
+              <h3>Speed Runner</h3>
+              <p>Best “Chance Card” implementation.</p>
+              <div class="prize__amount">$2,000</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- REGISTER -->
+      <section id="register" class="section">
+        <div class="container">
+          <div class="ctaCard">
+            <div class="ctaCard__left">
+              <h2>Ready to roll?</h2>
+              <p>Reserve your spot, join the Discord, and start thinking about what “property” you want to build on.</p>
+              <div class="ctaCard__actions">
+                <a class="btn btn--primary" href="#">Register Now</a>
+                <a class="btn btn--ghost" href="#">Join Discord</a>
+              </div>
+              <p class="tiny">*Replace these links with your real forms/invites.</p>
+            </div>
+
+            <div class="ctaCard__right" aria-hidden="true">
+              <div class="money"><span class="bill"></span><span class="bill"></span><span class="bill"></span></div>
+              <div class="token token--top"></div>
+              <div class="token token--mid"></div>
+              <div class="token token--bot"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SPONSOR -->
+      <section id="sponsor" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>Sponsors</h2>
+            <p>Put your logo on the board. Support builders.</p>
+          </div>
+
+          <div class="logos">
+            <div class="logoCard">Your Logo</div>
+            <div class="logoCard">Your Logo</div>
+            <div class="logoCard">Your Logo</div>
+            <div class="logoCard">Your Logo</div>
+          </div>
+
+          <div class="note">Want to sponsor? Email <strong>your@email.com</strong> (edit this) for packages and benefits.</div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>FAQ</h2>
+            <p>Quick answers so you don’t pass “Go” confused.</p>
+          </div>
+
+          <div class="faq">
+            <details class="faqItem" open>
+              <summary>Who can attend?</summary>
+              <p>Students of any major/skill level. Beginners welcome — we’ll have mentors and workshops.</p>
+            </details>
+
+            <details class="faqItem">
+              <summary>Do I need a team?</summary>
+              <p>No. You can build solo or form teams of up to 4 during kickoff.</p>
+            </details>
+
+            <details class="faqItem">
+              <summary>What should I bring?</summary>
+              <p>Laptop, charger, headphones, and a willingness to ship. We’ll handle snacks and vibes.</p>
+            </details>
+
+            <details class="faqItem">
+              <summary>How does judging work?</summary>
+              <p>Impact, execution, polish, and clarity of pitch. Bonus for real users or measurable results.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> MonopoliHacks. Built for GitHub Pages.</p>
+        <div class="footer__links">
+          <a href="#top">Back to top</a>
+          <a href="#register">Register</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
