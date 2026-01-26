@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>MonopoliHacks — Build, Ship, Win</title>
     <meta name="description" content="A Monopoly-themed hackathon landing page for GitHub Pages." />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Optional: clean, modern type that still feels “boardgame” with the styling -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- Decorative background layers -->
-    <div class="bg-grid" aria-hidden="true"></div>
-    <div class="bg-glow" aria-hidden="true"></div>
+    <!-- “Board” background image layers -->
+    <div class="bg-board" aria-hidden="true"></div>
+    <div class="bg-money" aria-hidden="true"></div>
+    <div class="bg-vignette" aria-hidden="true"></div>
 
     <header class="topbar">
       <div class="container topbar__inner">
@@ -37,7 +37,6 @@
     </header>
 
     <main id="top">
-      <!-- HERO -->
       <section class="hero">
         <div class="container hero__grid">
           <div class="hero__copy">
@@ -74,46 +73,47 @@
             </div>
           </div>
 
-          <div class="hero__card">
-            <div class="board">
-              <div class="board__header">
+          <div class="hero__card boardCard">
+            <div class="boardCard__inner">
+              <div class="boardCard__header">
                 <div class="chip chip--green">GO</div>
-                <div class="board__title">
-                  <div class="board__kicker">Hackathon Pass</div>
-                  <div class="board__name">MonopoliHacks</div>
+                <div class="boardCard__title">
+                  <div class="boardCard__kicker">Hackathon Pass</div>
+                  <div class="boardCard__name">MonopoliHacks</div>
                 </div>
                 <div class="chip chip--gold">VIP</div>
               </div>
 
-              <div class="board__body">
+              <div class="boardCard__grid">
                 <div class="tile tile--corner">
                   <span class="tile__cap">FREE PARKING</span>
+                  <span class="tile__sub">Recharge + snacks</span>
                 </div>
-
                 <div class="tile tile--property">
                   <span class="stripe stripe--purple" aria-hidden="true"></span>
                   <span class="tile__cap">DevTools Ave</span>
                   <span class="tile__sub">Ship faster</span>
                 </div>
-
                 <div class="tile tile--chance">
                   <span class="tile__cap">CHANCE</span>
-                  <span class="tile__sub">Random prompt</span>
+                  <span class="tile__sub">Bonus prompt</span>
                 </div>
-
                 <div class="tile tile--property">
                   <span class="stripe stripe--blue" aria-hidden="true"></span>
                   <span class="tile__cap">AI Blvd</span>
                   <span class="tile__sub">Automate work</span>
                 </div>
-
                 <div class="tile tile--jail">
                   <span class="tile__cap">TECH DEBT</span>
                   <span class="tile__sub">Go refactor</span>
                 </div>
+                <div class="tile tile--rail">
+                  <span class="tile__cap">RAILROAD</span>
+                  <span class="tile__sub">Mentor checkpoint</span>
+                </div>
               </div>
 
-              <div class="board__footer">
+              <div class="boardCard__footer">
                 <div class="fineprint">
                   <div class="fineprint__row"><span>Location</span><strong>Campus Hall A</strong></div>
                   <div class="fineprint__row"><span>Date</span><strong>Apr 18–20</strong></div>
@@ -126,13 +126,11 @@
                 </div>
               </div>
             </div>
-
-            <div class="hero__cardGlow" aria-hidden="true"></div>
+            <div class="boardCard__shine" aria-hidden="true"></div>
           </div>
         </div>
       </section>
 
-      <!-- ABOUT -->
       <section id="about" class="section">
         <div class="container">
           <div class="section__head">
@@ -141,7 +139,7 @@
           </div>
 
           <div class="grid3">
-            <article class="panel">
+            <article class="panel panel--property">
               <h3>Own a “property”</h3>
               <p>Pick a track, stake your claim, and build something that actually helps people.</p>
               <div class="tagRow">
@@ -150,7 +148,7 @@
               </div>
             </article>
 
-            <article class="panel">
+            <article class="panel panel--chance">
               <h3>Draw a “chance” card</h3>
               <p>Optional surprise prompts for bonus points: speedrun features, add a twist, or optimize.</p>
               <div class="tagRow">
@@ -159,7 +157,7 @@
               </div>
             </article>
 
-            <article class="panel">
+            <article class="panel panel--jail">
               <h3>Avoid “technical debt jail”</h3>
               <p>We score usability, polish, and real-world value — not just demos that barely run.</p>
               <div class="tagRow">
@@ -171,7 +169,6 @@
         </div>
       </section>
 
-      <!-- TRACKS -->
       <section id="tracks" class="section section--alt">
         <div class="container">
           <div class="section__head">
@@ -235,7 +232,6 @@
         </div>
       </section>
 
-      <!-- SCHEDULE -->
       <section id="schedule" class="section">
         <div class="container">
           <div class="section__head">
@@ -268,7 +264,6 @@
         </div>
       </section>
 
-      <!-- PRIZES -->
       <section id="prizes" class="section section--alt">
         <div class="container">
           <div class="section__head">
@@ -301,13 +296,12 @@
         </div>
       </section>
 
-      <!-- REGISTER -->
       <section id="register" class="section">
         <div class="container">
-          <div class="ctaCard">
+          <div class="ctaCard ctaCard--board">
             <div class="ctaCard__left">
               <h2>Ready to roll?</h2>
-              <p>Reserve your spot, join the Discord, and start thinking about what “property” you want to build on.</p>
+              <p>Reserve your spot, join the Discord, and pick your “property.”</p>
               <div class="ctaCard__actions">
                 <a class="btn btn--primary" href="#">Register Now</a>
                 <a class="btn btn--ghost" href="#">Join Discord</a>
@@ -325,7 +319,6 @@
         </div>
       </section>
 
-      <!-- SPONSOR -->
       <section id="sponsor" class="section section--alt">
         <div class="container">
           <div class="section__head">
@@ -344,7 +337,6 @@
         </div>
       </section>
 
-      <!-- FAQ -->
       <section id="faq" class="section">
         <div class="container">
           <div class="section__head">
@@ -380,10 +372,14 @@
     <footer class="footer">
       <div class="container footer__inner">
         <p>© <span id="year"></span> MonopoliHacks. Built for GitHub Pages.</p>
+
         <div class="footer__links">
           <a href="#top">Back to top</a>
           <a href="#register">Register</a>
         </div>
+
+        <!-- required attribution for the CC BY-SA images used in the background -->
+        <p class="attribution">Background photos: “Monopoly board game” by Yahya (CC BY-SA 4.0) and “Monopoly money” by James Petts (CC BY-SA 2.0). :contentReference[oaicite:1]{index=1}</p>
       </div>
     </footer>
 
