@@ -166,7 +166,7 @@
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
       <!-- Video Background -->
       <div class="absolute inset-0 z-0">
-        <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-35" id="bg-video">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-40" id="bg-video">
           <!-- Replace 'your-video.mp4' with your actual video file -->
           <source src="./assets/background.mp4" type="video/mp4" />
           <!-- Fallback: You can add a poster image or gradient -->
@@ -180,13 +180,13 @@
       <div class="diagonal-bg"></div>
 
       <div class="container mx-auto max-w-6xl relative z-10">
-        <div class="text-center space-y-8">
+        <div class="text-center space-y-4">
           <!-- Floating decorative element -->
-          <div class="float-animation inline-block">
+          <div class="float-animation inline-block mb-4">
             <div class="w-14 h-14 border-4 border-[#ff4757] transform rotate-45"></div>
           </div>
 
-          <h1 class="display-font text-6xl md:text-8xl lg:text-9xl leading-none">
+          <h1 class="display-font text-5xl md:text-7xl lg:text-9xl leading-none">
             <span class="block gradient-text">ClarkHacks.</span>
             <span class="block accent-glow">Build.</span>
             <span class="block accent-glow">Innovate.</span>
@@ -202,17 +202,19 @@
             <a href="https://luma.com/cl8hxmt3" target="_blank" class="cta-button px-12 py-5 text-xl font-semibold text-white rounded-none uppercase tracking-wider">Register Now</a>
           </div>
 
-          <div class="pt-12 text-sm text-gray-500 uppercase tracking-widest">Scroll to explore</div>
+          <div class="pt-12">
+            <button onclick="document.querySelector('#faq-section').scrollIntoView({ behavior: 'smooth' })" class="text-sm text-gray-500 uppercase tracking-widest hover:text-[#ff4757] transition-colors cursor-pointer">Scroll to explore ↓</button>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="relative py-32 px-6 bg-gradient-to-b from-black to-[#0a0a0a] overflow-hidden">
+    <section id="faq-section" class="relative py-32 px-6 bg-gradient-to-b from-black to-[#0a0a0a] overflow-hidden">
       <div class="section-number">03</div>
       <!-- Video Background for FAQ -->
       <div class="absolute inset-0 z-0">
-        <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-15">
+        <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-30">
           <source src="your-faq-video.mp4" type="video/mp4" />
         </video>
         <div class="absolute inset-0 bg-black bg-opacity-70"></div>
